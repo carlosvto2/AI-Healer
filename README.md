@@ -18,6 +18,7 @@ ai-healer/
 │   ├── monitor.py        # Real-time log streamer & signal orchestrator
 │   └── requirements-monitor.txt
 └── README.md
+```
 
 The Application (app/): A containerized Flask API running inside an isolated Docker container. It includes a simulated vulnerability (POST /break) that corrupts its memory state, and a Linux SIGHUP signal handler to trigger hot-reloads.
 
