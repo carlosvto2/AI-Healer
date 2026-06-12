@@ -20,7 +20,7 @@ def initialize_app():
 initialize_app()
 
 def handle_reload_signal(signum, frame):
-    """Signal handler to reload configuration on demand without restarting the process."""
+    """Signal handler to reload configuration on demand without restarting the process"""
     print("[SIGNAL] SIGHUP received! Reloading configuration...")
     initialize_app()
 
